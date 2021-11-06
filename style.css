@@ -40,7 +40,7 @@ body{
 	justify-content: space-between;
 	background: #333;
 	color: #fff;
-	padding: 1.5rem 8rem;
+	padding: 1.5rem 0;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -48,14 +48,13 @@ body{
 }
 
 .navbar .container{
-    padding: 0 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .menu ul{
-	display: flex;
+.navbar .menu li{
+	display: inline-block;
 	align-items: center;
 	list-style: none;
 }
@@ -67,6 +66,7 @@ body{
 }
 
 .navbar .menu li a{
+    display: block;
 	text-decoration: none;
 	color: #fff;
 	padding: 1rem;
@@ -83,8 +83,6 @@ body{
 
 .navbar .bars-btn{
     font-size: 25px;
-    float: right;
-    line-height: 50px;
     cursor: pointer;
     display: none;
 }
@@ -558,7 +556,7 @@ footer p{
 
 @media (max-width: 500px) {
     #navbar h2{
-      margin-left: 4rem;
+      margin-left: 14rem;
       margin-right: 3rem;
     }
 
@@ -576,7 +574,7 @@ footer p{
     }
 
     #services .boxes .box .feature{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     #skills .content{
