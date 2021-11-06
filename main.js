@@ -23,3 +23,4 @@ $(document).ready(function(){
 		$('.bars-btn i').toggleClass("active");
 	});
 });
+

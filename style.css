@@ -336,11 +336,11 @@ body{
 }
 
 #skills .content .column-right .java::before{
-    width: 50%;
+    width: 60%;
 }
 
 #skills .content .column-right .git::before{
-    width: 60%;
+    width: 80%;
 }
 
 #skills .content .column-right .sql::before{
@@ -557,6 +557,11 @@ footer p{
 }
 
 @media (max-width: 500px) {
+    #navbar h2{
+      margin-left: 4rem;
+      margin-right: 3rem;
+    }
+
     #showcase .showcase-content .joe{
         font-size: 60px;
         line-height: 80px;
@@ -596,5 +601,13 @@ footer p{
     }
     #contact .content .column-right{
         margin-left: 0;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
     }
 }
