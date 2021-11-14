@@ -40,7 +40,7 @@ body{
 	justify-content: space-between;
 	background: #333;
 	color: #fff;
-	padding: 1.5rem 0;
+	padding: 1rem 0;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -53,16 +53,21 @@ body{
     justify-content: space-between;
 }
 
+.navbar h2{
+    margin-left: -5rem;
+    margin-right: 10rem;
+}
+
+.navbar h2 a{
+    marginleft: -15rem;
+    color: #fff;
+    text-decoration: none;
+}
+
 .navbar .menu li{
 	display: inline-block;
 	align-items: center;
 	list-style: none;
-}
-
-.navbar h2 a{
-    margin-left: -15rem;
-	color: #fff;
-	text-decoration: none;
 }
 
 .navbar .menu li a{
@@ -458,6 +463,31 @@ footer{
     bottom: 0;
 }
 
+footer ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+footer ul li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
 footer p{
     text-align: center;
 }
@@ -467,10 +497,40 @@ footer p{
 /* Media query */
 
 
-@media (max-width: 1104px) {
+@media (max-width: 1304px) {
     #about .about-content .about-image img{
         height: 350px;
         width: 350px;
+    }
+
+    .navbar h2{
+        margin-left: -5rem;
+        margin-right: 2rem;
+    }
+
+    #showcase .container h1{
+    font-size: 80px;
+    line-height: 160px;
+    margin-left: -15px;
+    }
+
+    #services .boxes .box{
+        font-size: 18px;
+    }
+
+    #services .boxes .box i{
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    #services .boxes .box{
+        font-size: 16px;
+    }
+
+    #services .boxes .box i{
+        margin-left: -10px;
+        padding: 0.5rem;
     }
 }
 
@@ -478,7 +538,11 @@ footer p{
     .container{
         padding: 0 50px;
     }
-}
+
+
+    #services .boxes .box{
+        font-size: 15px;
+    }
 
 @media (max-width: 947px) {
     .navbar .bars-btn{
@@ -513,6 +577,16 @@ footer p{
         margin: 20px 0;
         font-size: 25px;
     }
+
+    #navbar h2{
+        margin-left: -5rem;
+        margin-right: 20rem;
+    }
+
+    #navbar .bars-btn i{
+        margin-left: 10rem;
+    }
+
      #showcase .showcase-content{
         margin-left: -45px;
     } 
@@ -539,12 +613,61 @@ footer p{
     #about .about-content .about-image{
         flex: 100%;
     }
+
+    #about .about-content .about-image img{
+        margin-left: 10rem;
+    }
+
+    #skills .content, #contact .content, #services .boxes{
+        flex-direction: column;
+    }
+
+    #skills .content .all,
+    #contact .content .all{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+     #services .boxes .box{
+        margin-bottom: 2rem;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    #services .boxes .box i{
+        margin-left: 3rem;
+    }
+
+    #contact .content .column-right{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 790px) {
+     #navbar h2{
+        margin-left: -5rem;
+        margin-right: 15rem;
+    }
+
+    #navbar .bars-btn i{
+        margin-left: 10rem;
+    }
 }
 
 @media (max-width: 690px) {
     .container{
         padding: 0 23px;
     }
+
+ #navbar h2{
+        margin-left: 0rem;
+        margin-right: 14rem;
+    }
+
+    #navbar .bars-btn i{
+        margin-left: 10rem;
+    }
+
     #showcase .showcase-content .joe{
         font-size: 60px;
     }
@@ -556,7 +679,7 @@ footer p{
 
 @media (max-width: 500px) {
     #navbar h2{
-      margin-left: 14rem;
+      margin-left: 0;
       margin-right: 3rem;
     }
 
@@ -565,12 +688,20 @@ footer p{
         line-height: 80px;
     }
 
+    #about .about-content .about-image img{
+        margin-left: -10px;
+    }
+
     #services .boxes{
         flex-direction: column;
     }
 
     #services .boxes .box{
         margin-bottom: 20px;
+    }
+
+    #services .boxes .box i{
+        margin-left: 0;
     }
 
     #services .boxes .box .feature{
@@ -599,13 +730,5 @@ footer p{
     }
     #contact .content .column-right{
         margin-left: 0;
-    }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
     }
 }
