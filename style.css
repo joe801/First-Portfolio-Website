@@ -461,35 +461,69 @@ footer{
     padding: 20px 23px;
     position: relative;
     bottom: 0;
+    justify-content: center;
 }
 
 footer ul{
     list-style: none;
     align-items: center;
     text-align: center;
-}
-
-footer ul li{
-    display: inline-block;
-    text-align: center;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 footer ul li a{
-    text-decoration: none;
-    color: #666;
-    font-size: 30px;
-    height: 60px;
-    width: 60px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
     background: #171515;
-    line-height: 60px;
+    line-height: 50px;
     border-radius: 50%;
     margin: 0 15px;
+    text-decoration: none;
+    color: #666;
+    transition: 0.5s;
 }
 
+footer ul li:nth-child(1) a:hover{
+    color: #0e76a8;
+    box-shadow: 0 0 20px #0077b5;
+    text-shadow: 0 0 20px #0077b5;
+}
+footer ul li:nth-child(2) a:hover{
+    color: #6cc644;
+    box-shadow: 0 0 20px  #171515;
+    text-shadow: 0 0 20px  #171515;
+}
+footer ul li:nth-child(3) a:hover{
+    color: #26a4f2;
+    box-shadow: 0 0 20px #00acee;
+    text-shadow: 0 0 20px #00acee;
+}
+footer ul li:nth-child(4) a:hover{
+    color: #456cba;
+    box-shadow: 0 0 20px #4267B2;
+    text-shadow: 0 0 20px #4267B2;
+}
+footer ul li:nth-child(5) a:hover{
+    color: #fbad50;
+    box-shadow: 0 0 20px orangered;
+    text-shadow: 0 0 20px #fccc63;
+}
+footer ul li:nth-child(6) a:hover{
+    color: #4285F4;
+    box-shadow: 0 0 20px #EA4335;
+    text-shadow: 0 0 20px #FBBC05;
+}
 footer p{
     text-align: center;
+    position: relative;
+    bottom: -1;
 }
 
 
@@ -730,5 +764,13 @@ footer p{
     }
     #contact .content .column-right{
         margin-left: 0;
+    }
+
+    footer ul li a{
+        margin-right: 0.5rem;
+        font-size: 21px;
+        height: 50px;
+        width: 50px;
+        margin: 0 5px;
     }
 }
