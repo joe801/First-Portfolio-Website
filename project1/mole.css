@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-image: url("sky.jpg");
+	text-align
+}
+
+h1{
+	text-align: center;
+    color: yellow;
+    text-shadow: 0 0 20px orange;
+}
+
+.sub{
+	text-align: center;
+    color: darkorange;
+    font-size: 20px;
+}
+
+#note{
+	text-align: center;
+	color: darkorange;
+}
+
+.content{
+	clear: both;
+	display: flex;
+	justify-content: space-between;
+	color: orangered;
+	font-size: 25px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+button{
+    float: right;
+    margin-right: 20px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: yellow;
+    color: orangered;
+    
+}
+
+button:hover{
+    background-color: greenyellow;
+    
+}
+
+fieldset{
+	clear: both;
+	height: 450px;
+	margin: 10px;
+	background-image: url("grass3.jpg");
+    border: 1px solid blue;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+}
+
+
+@media (max-width: 740px) {
+	fieldset{
+		height: 620px;
+	}
+
+	.content{
+		font-size: 20px;
+	}
+}

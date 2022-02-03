@@ -1,3 +1,7 @@
+:root {
+    --main-color: orangered;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -289,6 +293,21 @@ body{
     font-size: 18px;
 }
 
+#skills .content .column-left button{
+     padding: 10px;
+    background: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#skills .content .column-left button:hover{
+    background-color: orange;
+}
+
 #skills .content .column-left{
     widh: calc(50% - 30px);
     margin-right: 5rem;
@@ -331,15 +350,15 @@ body{
 }
 
 #skills .content .column-right .html::before{
-    width: 85%;
+    width: 90%;
 }
 
 #skills .content .column-right .css::before{
-    width: 70%;
+    width: 80%;
 }
 
 #skills .content .column-right .java::before{
-    width: 60%;
+    width: 70%;
 }
 
 #skills .content .column-right .git::before{

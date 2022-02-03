@@ -1,0 +1,108 @@
+:root {
+    --main-color: orangered;
+}
+
+body{
+	background: #f4f4f4;
+}
+
+.head{
+	text-align: center;
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+.linecontain{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.line{
+	width: 600px;
+	height: 20px;
+	background-color: orangered;
+}
+
+.moleimg{
+	margin-top: 5rem;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.frames{
+	height: 87.5vh;
+}
+
+.frames img{
+	width: 80%;
+	cursor: pointer;
+}
+
+.frames img:hover{
+	width: 85%;
+}
+
+.projectinfo{
+	text-align: center;
+}
+
+.projectname{
+	font-size: 30px;
+	font-weight: bolder;
+	color: orangered;
+}
+
+.projectsub{
+	font-weight: bolder;
+}
+
+.projectbutton a{
+	text-decoration: none;
+	color: white;
+}
+
+.projectbutton{
+	margin-top: 10px;
+	padding: 0 30px;
+	font-size: 25px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	background-color: var(--main-color);
+}
+
+.projectbutton:hover{
+	background-color: orange;
+}
+
+.loginimg{
+	margin-top: 5rem;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+
+@media (max-width: 1100px) {
+	.frames{
+		height: 80vh;
+	}
+
+	.frames img{
+		height: 500px;
+	}
+}
+
+@media (max-width: 750px) {
+	.line{
+		width: 300px;
+		height: 15px;
+		background-color: orangered;
+	}
+
+	.head{
+		font-size: 30px;
+	}
+}
