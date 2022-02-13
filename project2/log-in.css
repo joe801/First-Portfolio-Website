@@ -74,13 +74,34 @@ h1{
     color: #eba3e9;
 }
 
+
+#logo{
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    margin-right: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#logo-col{
+    color: orangered;
+}
+
 @media (max-width: 750px) {
     .loginbox{
-        width: 250px;
+    width: 250px;
     height: 420px;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     }
+
+    #logo{
+        font-size: 15px;
+        top: 90%;
+        left: 75%;
+    }
 }
+

@@ -1,5 +1,20 @@
 :root {
     --main-color: orangered;
+    --text-color: #333;
+    --back-color: #f4f4f4;
+    --about-back: #fff;
+    --about-text: #000;
+    --box-bacground: #fff;
+    --bottom: black;
+}
+
+.dark-theme{
+    --text-color: #fff;
+    --back-color: #000;
+    --about-back: #333;
+    --about-text: #f4f4f4;
+    --box-bacground: gray;
+    --bottom: white;
 }
 
 *{
@@ -11,7 +26,7 @@
 body{
 	font-family: Arial, sans-serif;
 	line-height: 1.4;
-	color: #333;
+	color: var(--text-color);
 	overflow-x: hidden;
 }
 
@@ -24,12 +39,12 @@ body{
 }
 
 .text-primary{
-	color: orangered;
+	color: var(--main-color);
 }
 
 .bg-light{
-    background: #f4f4f4;
-    color: #333;
+    background: var(--back-color);
+    color: var(--text-color);
 }
 
 .bg-dark{
@@ -48,7 +63,7 @@ body{
 	position: sticky;
 	top: 0;
 	z-index: 1;
-	border-bottom: 3px solid orangered;
+	border-bottom: 3px solid var(--main-color);
 }
 
 .navbar .container{
@@ -86,7 +101,7 @@ body{
 }
 
 .navbar .menu li a:hover{
-	background-color: orangered;
+	background-color: var(--main-color);
 
 }
 
@@ -94,6 +109,29 @@ body{
     font-size: 25px;
     cursor: pointer;
     display: none;
+}
+
+#moon{
+    position: fixed;
+    color: var(--main-color);
+    font-size: 30px;
+    top: 4%;
+    left: 85%;
+    opacity: 0.7;
+}
+
+#sun{
+    display: none;
+    position: fixed;
+    color: var(--main-color);
+    font-size: 30px;
+    top: 4%;
+    left: 85%;
+    opacity: 0.7;
+}
+
+#sun:hover, #moon:hover{
+    color: orange;
 }
 
 /* Showcase Area */
@@ -113,7 +151,7 @@ body{
     font-size: 35px;
     font-weight: 600;
     margin-bottom: -50px;
-    color: white;
+    color: #fff;
 }
 
 #showcase .container h1{
@@ -137,7 +175,7 @@ body{
 #showcase .container h3{
     font-size: 35px;
     font-weight: 500;
-    color: orangered;
+    color: var(--main-color);
     margin-top: -20px;
 }
 
@@ -155,6 +193,8 @@ body{
 
 #about{
     padding: 4.5rem 0;
+    background-color: var(--about-back);
+    color: var(--about-text);
 }
 
 #about h2, #services h2{
@@ -223,7 +263,7 @@ body{
 }
 
 #services .box{
-    background: #fff;
+    background: var(--box-bacground);
     flex: 1;
     padding: 2.1rem;
     margin: 0 3rem;
@@ -449,7 +489,7 @@ body{
 #contact .content .form-box textarea{
     width: 100%;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--bottom);
     padding: 10px;
     margin-bottom: 20px;
     background: transparent;
@@ -462,7 +502,7 @@ body{
 
 #contact .content .column-right button{
     padding: 10px;
-    background: orangered;
+    background: var(--main-color);
     color: white;
     border: none;
     cursor: pointer;
@@ -525,16 +565,11 @@ footer ul li:nth-child(3) a:hover{
     text-shadow: 0 0 20px #00acee;
 }
 footer ul li:nth-child(4) a:hover{
-    color: #456cba;
-    box-shadow: 0 0 20px #4267B2;
-    text-shadow: 0 0 20px #4267B2;
-}
-footer ul li:nth-child(5) a:hover{
     color: #fbad50;
     box-shadow: 0 0 20px orangered;
     text-shadow: 0 0 20px #fccc63;
 }
-footer ul li:nth-child(6) a:hover{
+footer ul li:nth-child(5) a:hover{
     color: #4285F4;
     box-shadow: 0 0 20px #EA4335;
     text-shadow: 0 0 20px #FBBC05;
@@ -585,6 +620,17 @@ footer p{
         margin-left: -10px;
         padding: 0.5rem;
     }
+
+    #moon{
+        top: 2%;
+        left: 90%;
+    }
+
+#sun{
+    top: 2%;
+    left: 90%;
+}
+
 }
 
 @media (max-width: 991px) {
@@ -638,6 +684,17 @@ footer p{
 
     #navbar .bars-btn i{
         margin-left: 10rem;
+    }
+
+    #moon{
+        font-size: 30px;
+        top: 90%;
+        left: 85%;
+    }
+
+    #sun{
+        top: 90%;
+        left: 85%;
     }
 
      #showcase .showcase-content{
@@ -734,6 +791,17 @@ footer p{
     #navbar h2{
       margin-left: 0;
       margin-right: 3rem;
+    }
+
+     #moon{
+        font-size: 30px;
+        top: 88%;
+        left: 86%;
+    }
+
+    #sun{
+        top: 90%;
+        left: 88%;
     }
 
     #showcase .showcase-content .joe{

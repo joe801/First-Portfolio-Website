@@ -1,9 +1,18 @@
 :root {
     --main-color: orangered;
+    --text-color: #000;
+    --back-color: #f4f4f4;
+}
+
+.dark-theme{
+	--text-color: #fff;
+    --back-color: #000;
 }
 
 body{
-	background: #f4f4f4;
+	background: var(--back-color);
+	color: var(--text-color);
+	font-family: Arial, sans-serif;
 }
 
 .head{
@@ -21,7 +30,7 @@ body{
 .line{
 	width: 600px;
 	height: 20px;
-	background-color: orangered;
+	background-color: var(--main-color);
 }
 
 .moleimg{
@@ -51,7 +60,7 @@ body{
 .projectname{
 	font-size: 30px;
 	font-weight: bolder;
-	color: orangered;
+	color: var(--main-color);
 }
 
 .projectsub{
@@ -99,7 +108,7 @@ body{
 	.line{
 		width: 300px;
 		height: 15px;
-		background-color: orangered;
+		background-color: var(--main-color);
 	}
 
 	.head{
