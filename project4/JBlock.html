@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>J_Block</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="JBlock.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="logo_t.png">
+	<script src="jquery3.min.js"></script>
+	<script src="jquery-ui/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="head-container">
+		<p class="head">J_Block</p>
+		<div class="fileBtn">
+			<button id="htmlbtn"><label for="html">HTML</label></button>
+			<button id="cssbtn"><label for="css">CSS</label></button>
+			<button id="javascriptbtn"><label for="javascript">Javascript</label></button>
+			<button id="outputbtn"><label for="output">Output</label></button>
+		</div>
+		<img src="logo_t.png">
+	</div>
+	<div class="input-container">
+		<textarea id="html" class="hj ch" placeholder="Enter html codes here"></textarea>
+		<textarea id="css" class="cj ch" placeholder="Enter css codes here"></textarea>
+		<textarea id="javascript" class="cj hj" placeholder="Enter javascript codes here"></textarea>
+		<iframe id="output"></iframe>
+	</div>
+
+	<script type="text/javascript" src="JBlock.js"></script>
+</body>
+</html>

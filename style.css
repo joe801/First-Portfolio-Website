@@ -137,7 +137,7 @@ body{
 /* Showcase Area */
 
 #showcase {
-	background: url(img/back5.jpeg) no-repeat center center/cover;
+	background: url(img/glasses.jpg) no-repeat center center/cover;
     height: 87.5vh;
 }
 
@@ -285,7 +285,7 @@ body{
 /* Section: Skills */
 
 #skills {
-    background: url(img/images10.jpeg) no-repeat center center/cover;
+    background: url(img/glass.jpg) no-repeat center center/cover;
     height: ;
 }
 
@@ -342,6 +342,7 @@ body{
     transition: background 0.3s;
     border-radius: 5px;
     margin-top: 10px;
+    margin-right: 30px;
 }
 
 #skills .content .column-left button:hover{
@@ -406,7 +407,7 @@ body{
 }
 
 #skills .content .column-right .sql::before{
-    width: 50%;
+    width: 90%;
 }
 
 
@@ -494,6 +495,18 @@ body{
     margin-bottom: 20px;
     background: transparent;
     outline: none;
+    resize: none;
+}
+
+#contact select{
+    border: none;
+    width: 100%;
+     border-bottom: 1px solid var(--bottom);
+    padding: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    outline: none;
+    color: grey;
 }
 
 #contact .content .column-right textarea{
@@ -836,6 +849,10 @@ footer p{
 
     #skills .content .all{
         width: 100%;
+    }
+
+    #skills .content .column-left button{
+        margin-right: 10px;
     }
 
     #contact .content{
