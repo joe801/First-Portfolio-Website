@@ -24,6 +24,8 @@ $(document).ready(function(){
 	});
 });
 
+//editing dark and light theme
+
 var icon = document.getElementById("moon");
 var icon2 = document.getElementById("sun");
 

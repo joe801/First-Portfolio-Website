@@ -42,6 +42,7 @@ body{
 
 .frames{
 	height: 87.5vh;
+	margin-top: 5rem;
 }
 
 .frames img{
@@ -87,7 +88,7 @@ body{
 }
 
 .loginimg{
-	margin-top: 5rem;
+	margin-top: 8rem;
 	justify-content: center;
 	align-items: center;
 	display: flex;

@@ -490,6 +490,7 @@ body{
 #contact .content .form-box textarea{
     width: 100%;
     border: none;
+    color: var(--text-color);
     border-bottom: 1px solid var(--bottom);
     padding: 10px;
     margin-bottom: 20px;
